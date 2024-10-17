@@ -1,7 +1,7 @@
 <?php
 include ('koneksi.php');
 
-class Sakit extends Database{
+class PegawaiTdk_ada extends Database{
 
     public function __construct(){
         parent::__construct();
@@ -12,7 +12,7 @@ public function Aksi(){
     return $this->koneksi->query($masuk);
     }
 }
-$nale = new Sakit();
+$nale = new PegawaiTdk_ada();
 $nale1 = $nale->Aksi();
 ?>
 
@@ -75,7 +75,7 @@ $nale1 = $nale->Aksi();
     </div>
   </div>
 </nav>
-<H3 class="d-flex justify-content-center align-items-center mt-3 mb-5">Selamat datang tabel ini merupakan pegawai yang tidak memiliki surat keterangan </H3>
+<H3 class="d-flex justify-content-center align-items-center mt-3 mb-5">Selamat datang, tabel ini merupakan pegawai yang tidak memiliki surat keterangan </H3>
 <table class="table mt-3" border="4">
   <thead>
     <tr>
